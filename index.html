@@ -3,10 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Typeset — Type the news, at speed</title>
+<title>Typeset — Free Typing Speed Test & Typing Practice (WPM Test)</title>
+<meta name="description" content="Typeset is a free online typing speed test. Practice typing, measure your WPM and accuracy in real time, and improve with Timed, Wire (News), Quotes, and Zen modes — no sign-up required.">
+<meta name="keywords" content="typing test, typing speed test, wpm test, typing practice, free typing test, words per minute, touch typing, keyboard practice, online typing test">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Munish Mishra">
+<meta name="theme-color" content="#0d1016">
+<link rel="canonical" href="https://typeset.example.com/">
+<!-- Replace https://typeset.example.com/ above with your real, live domain everywhere it appears in this file (canonical, og:url, twitter, JSON-LD) -->
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://typeset.example.com/">
+<meta property="og:title" content="Typeset — Free Typing Speed Test & Typing Practice">
+<meta property="og:description" content="Test your typing speed (WPM) and accuracy for free. Timed tests, live news-style Wire mode, quotes, and Zen practice — no sign-up needed.">
+<meta property="og:image" content="https://typeset.example.com/og-image.png">
+<meta property="og:site_name" content="Typeset">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://typeset.example.com/">
+<meta name="twitter:title" content="Typeset — Free Typing Speed Test & Typing Practice">
+<meta name="twitter:description" content="Test your typing speed (WPM) and accuracy for free. Timed tests, live news-style Wire mode, quotes, and Zen practice — no sign-up needed.">
+<meta name="twitter:image" content="https://typeset.example.com/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d1016'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' font-weight='700' fill='%23c8402f' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Structured data: helps Google understand this is a free web app + FAQ, and can trigger rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Typeset",
+  "url": "https://typeset.example.com/",
+  "description": "Free online typing speed test and typing practice tool with Timed, Wire (News), Quotes, and Zen modes. Tracks WPM, accuracy, and consistency.",
+  "applicationCategory": "EducationApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good typing speed (WPM)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The average typing speed is around 40 WPM. Professional typists often reach 65-75 WPM, and competitive typists can exceed 120 WPM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is WPM calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Words per minute is calculated by dividing the number of correctly typed characters by 5, then dividing by the elapsed time in minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Typeset free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Typeset's typing speed test and all typing practice modes are completely free, with no account or sign-up required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Typeset save my typing test history?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typeset stores your best WPM, streak, and total characters typed locally in your browser, so your progress is remembered on the same device."
+      }
+    }
+  ]
+}
+</script>
+
 <!-- Google AdSense: replace ca-pub-XXXXXXXXXXXXXXXX with your real publisher ID -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 <style>
@@ -112,6 +196,7 @@ header{
   font-weight:700;
   font-size:26px;
   letter-spacing:-0.01em;
+  margin:0;
 }
 .brand .mark em{ color:var(--wire); font-style:normal; }
 .brand .kicker{
@@ -541,6 +626,49 @@ body.light .stage-hint{ color:#9aa1ac; }
   .text-field{ font-size:22px; line-height:1.8; }
   .result-grid{ grid-template-columns:repeat(2,1fr); }
 }
+
+/* ---------- SEO content section ---------- */
+.seo-content{
+  position:relative; z-index:2;
+  max-width:1040px;
+  margin:0 auto;
+  padding:10px 24px 60px;
+  color:var(--muted);
+  font-family:var(--font-ui);
+  line-height:1.7;
+}
+.seo-content h2{
+  font-family:var(--font-display);
+  color:var(--paper);
+  font-size:24px;
+  font-weight:600;
+  margin:34px 0 12px;
+}
+.seo-content h2:first-child{ margin-top:0; }
+.seo-content h3{
+  font-family:var(--font-ui);
+  color:var(--paper);
+  font-size:16px;
+  font-weight:600;
+  margin:20px 0 8px;
+}
+.seo-content p{ margin:0 0 12px; font-size:14.5px; }
+.seo-content ul{ margin:0 0 12px; padding-left:20px; font-size:14.5px; }
+.seo-content li{ margin-bottom:6px; }
+.seo-faq details{
+  background:var(--ink-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius-s);
+  padding:12px 16px;
+  margin-bottom:8px;
+}
+.seo-faq summary{
+  cursor:pointer;
+  font-weight:600;
+  color:var(--paper);
+  font-size:14.5px;
+}
+.seo-faq p{ margin-top:10px; margin-bottom:0; }
 </style>
 </head>
 <body>
@@ -552,7 +680,7 @@ body.light .stage-hint{ color:#9aa1ac; }
 
 <header>
   <div class="brand">
-    <span class="mark">Type<em>set</em></span>
+    <h1 class="mark">Type<em>set</em></h1>
     <span class="kicker">Wire-speed typing practice</span>
   </div>
   <nav style="display:flex;gap:16px;font-family:var(--font-mono);font-size:12px;">
@@ -654,6 +782,50 @@ body.light .stage-hint{ color:#9aa1ac; }
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
+
+<section class="seo-content" aria-label="About Typeset typing test">
+  <h2>Free Online Typing Speed Test — Practice Typing and Improve Your WPM</h2>
+  <p>Typeset is a free typing speed test and typing practice tool that measures your words per minute (WPM), accuracy, and consistency in real time. Whether you're a student learning to touch type, a professional wanting faster keyboarding for work, or a writer chasing a personal best, Typeset gives you an instant, no-signup way to test and improve your typing speed.</p>
+
+  <h3>Typing test modes</h3>
+  <ul>
+    <li><strong>Timed test</strong> — classic 15, 30, 60, or 120 second typing speed tests with randomly generated common-word passages.</li>
+    <li><strong>Wire (News) mode</strong> — practice typing with real news-style passages, including an optional live mode that pulls fresh, current-events copy for every round.</li>
+    <li><strong>Quotes</strong> — short-form typing practice using famous and original quotes.</li>
+    <li><strong>Zen mode</strong> — untimed, pressure-free typing practice for building muscle memory.</li>
+  </ul>
+
+  <h3>Why use Typeset to practice typing</h3>
+  <p>Typeset tracks your typing speed test results over time, including your best WPM, current streak, and total characters typed, so you can watch your typing skills improve session after session. Mechanical keyboard sound effects, a focus mode that hides distractions, and light/dark themes make each typing practice session feel like using a real newsroom typewriter.</p>
+
+  <h3>Who typing practice helps</h3>
+  <ul>
+    <li>Students preparing for school typing tests and keyboarding class benchmarks</li>
+    <li>Job seekers who need to list an accurate WPM on their resume</li>
+    <li>Writers, developers, and data-entry professionals who type for a living</li>
+    <li>Anyone learning touch typing or working to reduce typos and increase accuracy</li>
+  </ul>
+
+  <h3 id="faq-heading">Frequently asked questions</h3>
+  <div class="seo-faq">
+    <details>
+      <summary>What is a good typing speed (WPM)?</summary>
+      <p>The average typing speed is around 40 WPM. Professional typists often reach 65-75 WPM, and competitive typists can exceed 120 WPM. Use the timed test on Typeset regularly to track your progress toward these benchmarks.</p>
+    </details>
+    <details>
+      <summary>How is WPM calculated?</summary>
+      <p>Words per minute is calculated by dividing the number of correctly typed characters by 5 (the average word length), then dividing by the elapsed time in minutes. Typeset calculates this live as you type.</p>
+    </details>
+    <details>
+      <summary>Is Typeset free to use?</summary>
+      <p>Yes. Typeset's typing speed test and all typing practice modes are completely free, with no account or sign-up required.</p>
+    </details>
+    <details>
+      <summary>Does Typeset save my typing test history?</summary>
+      <p>Typeset stores your best WPM, streak, and total characters typed locally in your browser, so your progress is remembered the next time you visit on the same device.</p>
+    </details>
+  </div>
+</section>
 
 <div class="paper-strip">
   <div class="paper-track" id="paperTrack">
