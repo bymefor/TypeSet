@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Typeset</title>
+<meta name="description" content="Typeset is a distraction-free typing speed test built for people who want fast, accurate, honest practice — no gimmicks, no sign-up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d1016; --ink-2:#151a24; --ink-3:#1e2531;
+  --paper:#f6f2e9; --paper-dim:#e9e3d3;
+  --wire:#c8402f; --wire-dim:#a83527;
+  --signal:#31b58b; --signal-dim:#20805f;
+  --amber:#e0a548; --muted:#7b8496; --muted-2:#4b5262; --line:#2a3140;
+  --radius-s:8px; --radius-m:12px; --radius-l:20px;
+  --font-display:'Fraunces', serif; --font-mono:'JetBrains Mono', monospace; --font-ui:'Inter', sans-serif;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--ink); color:var(--paper); font-family:var(--font-ui); min-height:100vh; -webkit-font-smoothing:antialiased;}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle at 20% 10%, rgba(200,64,47,0.08), transparent 45%),radial-gradient(circle at 85% 80%, rgba(49,181,139,0.07), transparent 45%);pointer-events:none;z-index:0;}
+a{color:var(--signal);}
+header{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:28px 24px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:inherit;}
+.brand .mark{font-family:var(--font-display);font-weight:700;font-size:24px;letter-spacing:-0.01em;}
+.brand .mark em{color:var(--wire);font-style:normal;}
+nav{display:flex;gap:18px;font-family:var(--font-mono);font-size:12.5px;}
+nav a{color:var(--muted);text-decoration:none;letter-spacing:0.02em;}
+nav a:hover{color:var(--paper);}
+nav a.active{color:var(--signal);}
+main{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:44px 24px 90px;}
+h1{font-family:var(--font-display);font-size:38px;font-weight:600;line-height:1.15;margin:0 0 8px;}
+.kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;}
+p{font-size:16px;line-height:1.7;color:#d8d3c6;margin:0 0 18px;}
+h2{font-family:var(--font-display);font-size:22px;font-weight:600;margin:36px 0 12px;}
+.card{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius-m);padding:20px 22px;margin:24px 0;}
+.card .num{font-family:var(--font-mono);color:var(--signal);font-size:12px;letter-spacing:0.08em;}
+footer{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:24px 24px 50px;border-top:1px solid var(--line);font-family:var(--font-mono);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+footer a{color:var(--muted);}
+footer a:hover{color:var(--paper);}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="mark">Type<em>set</em></span></a>
+  <nav>
+    <a href="index.html">Test</a>
+    <a href="about.html" class="active">About</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <div class="kicker">About the wire</div>
+  <h1>Built for people who just want to type fast.</h1>
+  <p>Typeset started as a weekend itch: most typing tests online are cluttered with logins, leaderboards you don't care about, and ads jammed between you and the words. We wanted something closer to a newsroom wire — clean copy, a ticking clock, and a number at the end that tells you the truth.</p>
+  <p>Every test on Typeset runs entirely in your browser. There's no account to create and no typing data sent anywhere to be sold. Your stats — words per minute, accuracy, streaks, personal bests — are stored locally on your device so they're there the next time you open the site, and nowhere else.</p>
+
+  <h2>What Typeset measures</h2>
+  <p>We report words per minute (WPM), raw accuracy, and consistency — how steady your pace was across the test, not just your average. A single high WPM number can hide a lot of backspacing; we'd rather show you the full picture.</p>
+
+  <div class="card">
+    <div class="num">MODES</div>
+    <p style="margin:8px 0 0;">Time-based sprints, fixed word counts, punctuated passages, and a "wire" mode that pulls in live text so no two sessions read the same.</p>
+  </div>
+
+  <h2>Why it's free</h2>
+  <p>Typeset is supported by a small amount of on-page advertising, placed so it doesn't interrupt the typing area itself. That's what keeps the test free, sign-up-free, and ad-network-tracking-light. If something about an ad ever gets in your way, <a href="contact.html">let us know</a>.</p>
+
+  <h2>Who's behind it</h2>
+  <p>Typeset is an independent, small-team project. We build and maintain it in our spare time and read every message that comes through the contact page.</p>
+</main>
+<footer>
+  <span>© 2026 Typeset. All rights reserved.</span>
+  <span><a href="privacy-policy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a></span>
+</footer>
+</body>
+</html>
